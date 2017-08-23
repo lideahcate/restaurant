@@ -22,17 +22,34 @@
     <section>
       <form action="https://formspree.io/lideahcate@gmail.com"
       method="POST">
-      <label>name:</label>
-      <label>email:</label>
-      <label>phone:</label>
-      <label>date:</label>
+      <label for="name">name:</label>
+      <input id="name" type="text" name="name">
+      <label for="email">email:</label>
+      <input id="email" name="_replyto">
+      <label for="phone">phone:</label>
+      <input id="phone" type="text" name="email" />
+      <label for="date">date:</label>
+      <input id="date" type="date" name="date"/>
+      <label>time:</label>
       <select>
-        
+        <option value="10am">10 am</value>
+        <option value="11am">11 am</value>
+        <option value="12pm">12 pm</value>
+        <option value="1pm">1pm</value>
+        <option value="2pm">2pm</value>
+        <option value="4pm">4pm</value>
+        <option value="5pm">5pm</value>
+        <option value="6pm">6pm</value>
+        <option value="7pm">7pm</value>
+        <option value="8pm">8pm</value>
+        <option value="9pm">9pm</value>
       </select>
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
+      <label for="guests">number of guests:</label>
+      <input id="guests" type="text" name:"guests" />
+      <label for="special-instructions">special instructions:</label>
+      <textarea id="special-instructions" rows="5" placeholder="special instructions i,e birthdays, anniversaries, or any other special occasion"></textarea>
+      <input type="submit" value="Send">
+      </form>
     </section>
   </body>
 </html>
