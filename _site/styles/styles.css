@@ -1,109 +1,217 @@
+/*-----css reset------*/
 *{
   padding:0;
   margin:0;
   box-sizing: border-box;
-  border:1px solid lightgrey;
 }
 
-body{
-  font-family: 'Lora', serif;
+[class~="col"], [class*="col-"], [class*="col_"]{
+  padding: 0;
+  display: inline-block;
 }
+/*-----universal styles------*/
+body{
+  font-family: 'Karma', serif;
+  color: #2d3142;
+  overflow-x: hidden;
+}
+
 
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-align: center;
   text-transform: capitalize;
   margin: 0 0 15px 0;
+  color: #348aa7;
+}
+
+h2{
+  font-size: 32px;
 }
 
 p{
   margin: 0 0 15px 0;
-  line-height: 1.5;
-}
-
-.logo img{
-  width: 12%
-}
-
-nav{
-  text-align: right;
+  line-height: 1.9;
+  font-size: 22px;
 }
 
 a{
   text-decoration: none;
   letter-spacing: 1.5;
   word-spacing: 10px;
+  font-family: 'Quicksand';
+  font-size: 22px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/*-----helper styles------*/
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.padded{
   padding: 5%;
 }
-
-a:hover{
-  color: darkorchid;
+/*------------modular styles-------------*/
+.light-section{
+  background-color: #f9f9f9;
 }
 
-.dropdown-nav{
-  position: relative;
+.dark-section{
+  background-color: #deede6;
 }
 
-.dropdown-content {
-  position: absolute;
-  display: none;
+section.with-margin{
+  padding: 5% 10%;
 }
 
-li{
-  list-decoration:none;
-}
-
-.dropdown-nav:hover .dropdown-content {
-    display: block;
+.with-padding{
+  padding: 5%;
 }
 
 .banner{
   background-image: url("/images/villa.jpg");
   background-size: cover;
-  min-height: 80vh;
+  min-height: 90vh;
   text-transform: capitalize;
+  position: relative;
 }
 
 .banner h1{
   font-size: 70px;
+  color: #f9f9f9;
 }
 
-.banner h2{
+.banner h1 .subtitle{
   font-size: 20px;
+}
+"
+.bottom-fade-overlay{
+  position: relative;
+}
+
+.bottom-fade-overlay:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(top bottom,rgba(255, 255, 255, 0),#2d3142);
+  opacity: .6;
 }
 
 .center {
   text-align: center;
 }
 
-.welcome-section{
-  padding: 5% 20%;
-}
-
-.welcome-section h2{
-  color: whitesmoke;
-}
-.welcome-section div{
-  padding: 3%;
-  background-color: lightslategrey;
-  color: whitesmoke;
-}
-
-.menu-blurb h3{
-  font-size: 20px;
-}
-
-.menu-blurb div{
-  padding: 3%;
-}
-
-.footer{
+footer{
   text-align: right;
 }
 
+.background-image{
+  background-position: center;
+  background-size: cover;
+}
+
+.btn{
+  padding:10px 40px;
+  color: white;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.btn-primary{
+  background-color: #2d3142;
+}
+
+.btn-primary:hover{
+  background-color: #348aa7;
+}
+
+.btn-secondary{
+
+}
+
+.hours-cell{
+  padding:5%;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.hours-operation{
+  min-height: 70vh;
+  background-color: #f9f9f9;
+}
+
+.hours-operation h2{
+  font-size: 50px;
+  padding-top: 45px;
+}
+
+.transportation{
+  min-height: 80vh;
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: #deede6;
+}
+
+.transportation h2{
+  font-size: 50px;
+}
+
+/*------nav styles------*/
+header .logo img{
+  width: 15%;
+  max-height: 45px;
+}
+
+header nav{
+  text-align: right;
+}
+
+header nav a{
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  color: #3CD89F;
+}
+
+header nav a:hover{
+  color: #348AA7;
+  background-color: #deede6;
+}
+
+header .dropdown-nav{
+  position: relative;
+}
+
+header .dropdown-content {
+  position: absolute;
+  display: none;
+}
+
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*----------homepage styles-----------*/
+
+
+
+
 /*-------menu page--------*/
 .menu-block .menu-item-image{
-  height: 75vh;
+  min-height: 75vh;
   /*-----set the position and size of the background images-----*/
 }
 
