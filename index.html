@@ -1,6 +1,17 @@
 ---
 layout: default
 title: Palm House Cantina
+hours-cell:
+  - title: dinner
+    days: monday-thursday
+    time: 4pm-9pm
+  - title: dinner
+    days: friday-sunday
+    time: 5pm-10pm
+  - title: brunch
+    days: saturday and sunday
+    time: 10am-2pm
+
 ---
 <section class="banner indexBanner">
   <div>
@@ -20,8 +31,8 @@ title: Palm House Cantina
     </p>
   </div>
 </section>
-<section class="grid">
-  <div class="col-4">
+<section class="grid menu-blurb">
+  <div class="col-4 menu-blurb">
     <!--put image here-->
   </div>
   <div class="col-4">
@@ -34,49 +45,23 @@ title: Palm House Cantina
     <!--put image here-->
   </div>
 </section>
-<section>
+<section class="hours">
   <h2>hours of operation</h2>
-  <div class="grid">
-    <div class="col-3">
+  <div class="grid hours-cell">
+    {% for event in page.hours-cell %}
+    <div class="col-1">
       <i class="fa fa-pagelines" aria-hidden="true"></i>
     </div>
     <div class="col-3">
-      <p>
-        dinner service
-      </p>
+      {{ event.title }}
     </div>
-    <div class="col-6">
-      <p>
-        monday-thursday 5pm-9pm
-      </p>
+    <div class="col-4">
+      {{ event.days }}
     </div>
-    <div class="col-3">
-      <i class="fa fa-pagelines" aria-hidden="true"></i>
+    <div class="col-4">
+      {{ event.time }}
     </div>
-    <div class="col-3">
-      <p>
-        dinner service
-      </p>
-    </div>
-    <div class="col-6">
-      <p>
-        friday-sunday 4pm-2pm
-      </p>
-    </div>
-    <div class="col-3">
-      <i class="fa fa-pagelines" aria-hidden="true"></i>
-    </div>
-    <div class="col-3">
-      <p>
-        brunch
-      </p>
-    </div>
-    <div class="col-6">
-      <p>
-        saturday and sunday 10am-2pm
-      </p>
-    </div>
-    <!--put button for reservation navigation-->
+    {% endfor %}
   </div>
 </section>
 <section class="grid">
@@ -106,9 +91,24 @@ title: Palm House Cantina
   </div>
 </section>
 <section>
-  <div>
-    <a href="www.yelp.com"><i class="fa fa-yelp" aria-hidden="true"></i>yelp</a>
-    <a href="tripadvisor.com"><i class="fa fa-tripadvisor" aria-hidden="true"></i>tripadvisor</a>
-    <a href="plus.google.com"><i class="fa fa-google-plus-official" aria-hidden="true"></i> google plus</a>
+  <div class="grid">
+    <div class="col-4">
+      <a href="www.yelp.com">
+        <i class="fa fa-yelp" aria-hidden="true"></i>
+        <p>yelp</p>
+      </a>
+    </div>
+    <div class="col-4">
+      <a href="tripadvisor.com">
+        <i class="fa fa-tripadvisor" aria-hidden="true"></i>
+        <p>tripadvisor</p>
+      </a>
+    </div>
+    <div class="col-4">
+      <a href="plus.google.com">
+        <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+        <p>google plus</p>
+      </a>
+    </div>
   </div>
 </section>

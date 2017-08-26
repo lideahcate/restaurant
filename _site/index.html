@@ -4,7 +4,7 @@
     <title> Palm House Cantina </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.css" />
     <script src="https://use.fontawesome.com/a85b98fd69.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
     <!-- find out what goes in the head and put it in the head answer: css fonts and seo things tab id words-->
   </head>
@@ -14,11 +14,33 @@
         <img src="images/dragonfly-logo2.png" />
       </div>
     <nav class="col-6">
-      <a href="#home">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#reservations">Reservations</a>
-      <a href="#events">Events</a>
-      <a href="#staff">Staff</a>
+      <a href="/index.html">Home</a>
+      <a href="/menu.html">Menu</a>
+      <a href="/reservations.html">Reservations</a>
+      <span class="dropdown-nav">
+        <a href="/events.html">Events</a>
+        <div class="dropdown-content">
+          <ul>
+            <li>
+              <a href="/weddings.html">Weddings</a>
+            </li>
+            <li>
+              <a href="/retreats.html">Retreats</a>
+            </li>
+            <li>
+              <a href="/retreats.html">Retreats</a>
+            </li>
+            <li>
+              <a href="/pool-parties.html">Pool Parties</a>
+            </li
+            <li>
+              <a href="/dances.html">Dances</a>
+            </li>
+          </ul>
+        </div>
+      </span>
+
+      <a href="/staff.html">Staff</a>
     </nav>
     </header>
 
@@ -40,8 +62,8 @@
     </p>
   </div>
 </section>
-<section class="grid">
-  <div class="col-4">
+<section class="grid menu-blurb">
+  <div class="col-4 menu-blurb">
     <!--put image here-->
   </div>
   <div class="col-4">
@@ -54,49 +76,49 @@
     <!--put image here-->
   </div>
 </section>
-<section>
+<section class="hours">
   <h2>hours of operation</h2>
-  <div class="grid">
-    <div class="col-3">
+  <div class="grid hours-cell">
+    
+    <div class="col-1">
       <i class="fa fa-pagelines" aria-hidden="true"></i>
     </div>
     <div class="col-3">
-      <p>
-        dinner service
-      </p>
+      dinner
     </div>
-    <div class="col-6">
-      <p>
-        monday-thursday 5pm-9pm
-      </p>
+    <div class="col-4">
+      monday-thursday
     </div>
-    <div class="col-3">
+    <div class="col-4">
+      4pm-9pm
+    </div>
+    
+    <div class="col-1">
       <i class="fa fa-pagelines" aria-hidden="true"></i>
     </div>
     <div class="col-3">
-      <p>
-        dinner service
-      </p>
+      dinner
     </div>
-    <div class="col-6">
-      <p>
-        friday-sunday 4pm-2pm
-      </p>
+    <div class="col-4">
+      friday-sunday
     </div>
-    <div class="col-3">
+    <div class="col-4">
+      5pm-10pm
+    </div>
+    
+    <div class="col-1">
       <i class="fa fa-pagelines" aria-hidden="true"></i>
     </div>
     <div class="col-3">
-      <p>
-        brunch
-      </p>
+      brunch
     </div>
-    <div class="col-6">
-      <p>
-        saturday and sunday 10am-2pm
-      </p>
+    <div class="col-4">
+      saturday and sunday
     </div>
-    <!--put button for reservation navigation-->
+    <div class="col-4">
+      10am-2pm
+    </div>
+    
   </div>
 </section>
 <section class="grid">
@@ -126,17 +148,42 @@
   </div>
 </section>
 <section>
-  <div>
-    <a href="www.yelp.com"><i class="fa fa-yelp" aria-hidden="true"></i>yelp</a>
-    <a href="tripadvisor.com"><i class="fa fa-tripadvisor" aria-hidden="true"></i>tripadvisor</a>
-    <a href="plus.google.com"><i class="fa fa-google-plus-official" aria-hidden="true"></i> google plus</a>
+  <div class="grid">
+    <div class="col-4">
+      <a href="www.yelp.com">
+        <i class="fa fa-yelp" aria-hidden="true"></i>
+        <p>yelp</p>
+      </a>
+    </div>
+    <div class="col-4">
+      <a href="tripadvisor.com">
+        <i class="fa fa-tripadvisor" aria-hidden="true"></i>
+        <p>tripadvisor</p>
+      </a>
+    </div>
+    <div class="col-4">
+      <a href="plus.google.com">
+        <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+        <p>google plus</p>
+      </a>
+    </div>
   </div>
 </section>
 
 
     <footer class="grid">
-      <a href="www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true" class="col-3"></i>facebook</a>
-      <a href=www.instagram.com><i class="fa fa-instagram" aria-hidden="true" class= "col-3"></i>instagram</a>
+    <div class="col-3">
+      <a href="https://www.facebook.com/lideahcate">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <p>facebook</p>
+      </a>
+    </div>
+    <div class="col-3">
+      <a href=www.instagram.com>
+        <i class="fa fa-instagram" aria-hidden="true" class= "col-3"></i>
+        <p>instagram</p>
+      </a>
+    </div>
       <nav class="col-6">
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>

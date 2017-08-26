@@ -1,0 +1,5 @@
+collections:
+  meals:
+    output: false
+  events:
+    output: true
