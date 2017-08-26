@@ -168,6 +168,15 @@ footer{
   font-size: 50px;
 }
 
+.menu h1{
+  font-size: 50px;
+}
+
+.menu-item-image{
+  background-size: cover;
+}
+
+
 /*------nav styles------*/
 header .logo img{
   width: 15%;
