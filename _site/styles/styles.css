@@ -113,10 +113,6 @@ section.with-margin{
   text-align: center;
 }
 
-footer{
-  text-align: right;
-}
-
 .background-image{
   background-position: center;
   background-size: cover;
@@ -178,10 +174,6 @@ footer{
 
 
 /*------nav styles------*/
-header .logo img{
-  width: 15%;
-  max-height: 45px;
-}
 
 header nav{
   text-align: right;
@@ -205,13 +197,18 @@ header .dropdown-nav{
 header .dropdown-content {
   position: absolute;
   display: none;
+  z-index: 9;
+  left: 0;
 }
 
 .dropdown-nav:hover .dropdown-content {
     display: block;
+    background-color: #f9f9f9;
 }
 
-
+footer{
+  text-align: right;
+}
 
 /*----------homepage styles-----------*/
 
