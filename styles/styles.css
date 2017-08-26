@@ -33,10 +33,28 @@ a{
   text-decoration: none;
   letter-spacing: 1.5;
   word-spacing: 10px;
+  padding: 5%;
 }
 
 a:hover{
   color: darkorchid;
+}
+
+.dropdown-nav{
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+}
+
+li{
+  list-decoration:none;
+}
+
+.dropdown-nav:hover .dropdown-content {
+    display: block;
 }
 
 .banner{
@@ -87,4 +105,11 @@ a:hover{
 .menu-block .menu-item-image{
   height: 75vh;
   /*-----set the position and size of the background images-----*/
+}
+
+
+/*------------event page--------*/
+
+.event
+  background-image: url("/images/event-pic.jpg")
 }
