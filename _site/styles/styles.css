@@ -206,9 +206,7 @@ header .dropdown-content {
     background-color: #f9f9f9;
 }
 
-footer{
-  text-align: right;
-}
+
 
 /*----------homepage styles-----------*/
 
@@ -221,9 +219,28 @@ footer{
   /*-----set the position and size of the background images-----*/
 }
 
+.menu{
+  padding: 5%;
+}
+
+.menu h1{
+  font-size: 70px;
+}
+/*----------reservation styles------------*/
+
+.reservation h1{
+  font-size: 50px;
+}
+
 
 /*------------event page--------*/
 
 .event
   background-image: url("/images/event-pic.jpg")
+}
+
+/*------------footer styles-----------*/
+
+footer nav{
+  text-align: right;
 }
