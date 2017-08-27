@@ -250,12 +250,20 @@ header .dropdown-content {
 
 /*------------event page--------*/
 
-.event
+.event{
   background-image: url("/images/event-pic.jpg")
 }
 
 /*------------footer styles-----------*/
 
+footer{
+  min-height: 15vh;
+}
+
 footer nav{
+  display: inline-block;
+  padding: .75rem 1.5rem;
   text-align: right;
+  position: absolute;
+  right: 0;
 }
