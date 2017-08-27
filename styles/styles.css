@@ -210,7 +210,22 @@ header .dropdown-content {
 
 /*----------homepage styles-----------*/
 
+.icon-position{
+  display: inline-block;
+}
 
+.review{
+  padding: 10%;
+}
+
+.review h2{
+  font-size: 50px;
+  padding: 4%;
+}
+
+.icon{
+  padding: 0 18px;
+}
 
 
 /*-------menu page--------*/
